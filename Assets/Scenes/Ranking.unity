@@ -592,7 +592,7 @@ GameObject:
   - component: {fileID: 256296205}
   - component: {fileID: 256296204}
   m_Layer: 0
-  m_Name: GetRabkingTableField
+  m_Name: GetRankingTableField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1090,7 +1090,7 @@ GameObject:
   - component: {fileID: 569122712}
   - component: {fileID: 569122711}
   m_Layer: 5
-  m_Name: UpdateTableField
+  m_Name: NameTableField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2834,7 +2834,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1273596905}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 809787727}
+        m_TargetAssemblyTypeName: RankingManager, Assembly-CSharp
+        m_MethodName: UpdateRanking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1273596905
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4059,7 +4071,7 @@ GameObject:
   - component: {fileID: 1757146217}
   - component: {fileID: 1757146216}
   m_Layer: 5
-  m_Name: CreateColum2Field
+  m_Name: ScoreTableField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4355,7 +4367,7 @@ GameObject:
   - component: {fileID: 1856366441}
   - component: {fileID: 1856366440}
   m_Layer: 5
-  m_Name: SerVerUrlField
+  m_Name: ServerUrlField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4653,7 +4665,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1875877563}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 809787727}
+        m_TargetAssemblyTypeName: RankingManager, Assembly-CSharp
+        m_MethodName: ResetDB
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1875877563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4785,7 +4809,7 @@ GameObject:
   - component: {fileID: 1953670527}
   - component: {fileID: 1953670526}
   m_Layer: 5
-  m_Name: CreateTableField
+  m_Name: UpdateTableField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
